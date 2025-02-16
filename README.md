@@ -1,16 +1,55 @@
-# moving_squire
+# Square Movement Flutter App
 
-A new Flutter project.
+## Overview
+This is a simple Flutter application where a square moves left or right when tapped on the respective arrow icons. The square starts at the center of the screen and smoothly animates to the left or right edge when the arrows are tapped.
 
-## Getting Started
+## Features
+- The square starts in the center when the app initializes.
+- Left and right arrow icons are shown beside the square to move it in respective directions.
+- The square smoothly animates to the left or right end of the screen when tapped.
+- Once at the edge, the corresponding arrow disappears.
+- Uses `AnimatedPositioned` for smooth animations.
+- Implements a system-based dark/light theme.
 
-This project is a starting point for a Flutter application.
+## Screenshots
+(Insert relevant screenshots here)
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/flutter-square-movement.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd flutter-square-movement
+   ```
+3. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+4. Run the app:
+   ```sh
+   flutter run
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Code Structure
+- `main.dart`: Contains the core logic and UI.
+- `SquareMovementScreen`: Stateful widget handling movement logic.
+- `_moveSquare()`: Moves the square to the left or right edge.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+- Flutter
+- Dart
+
+## How It Works
+- The `AnimatedPositioned` widget smoothly transitions the square when the left or right arrow is tapped.
+- `GestureDetector` is used to detect taps on the arrows.
+- `_position` variable determines the square’s position dynamically based on screen width.
+- `_isAnimating` ensures smooth animations without interruptions.
+
+## Contributing
+Feel free to contribute to this project by creating a pull request or reporting issues.
+
+## License
+This project is licensed under the MIT License.
+
